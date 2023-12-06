@@ -1,0 +1,27 @@
+:root {
+    --white:    #ffffff;
+    --header:   #cee0dc;
+    --topper:   #9badb7;
+    --bgcolor:  #70818f;
+    --bottom:   #dfe08e;
+    --imgholder:#c0ba9c;
+    --ticket:   #5a81c2;
+    --extrablue:#34468e;
+    --drop:     #1a1453;
+    --text:     #000000;
+  }
+
+.Grid {
+  width: 100%;
+  /* border-collapse: collapse; */
+}
+
+.SomSpect-Home {
+  padding-left: 100px;
+  font-size: 32px;
+}
+
+body {
+  background: var(--bgcolor);
+  cursor: url(Cursor.cur);
+}
