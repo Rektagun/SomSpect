@@ -1,0 +1,19 @@
+
+
+    Layout:
+        - Home Page
+            - Backgrounds
+            - Boxes (Placeholders)
+            - Custom Cursor
+            - Buttons
+    
+        
+    Pages:
+        - Layout of all Pages
+        - Linking all Pages with Buttons
+
+    
+
+    Posting:
+        - Ability to add text
+        - Post Button
