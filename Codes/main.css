@@ -11,17 +11,48 @@
     --text:     #000000;
   }
 
+
+  @font-face {
+    font-family: myFirstFont;
+    src: url(InknutAntiqua-Black.ttf);
+  }
+  
+  div {
+    font-family: myFirstFont;
+  }
+
+
+
 .Grid {
   width: 100%;
   /* border-collapse: collapse; */
 }
 
-.SomSpect-Home {
-  padding-left: 100px;
-  font-size: 32px;
+link:target {
+  color: var(--ticket); /* change color on hover */
 }
+nav {
+  display: flex;
+  background-color: var(--topper);
+  height: 48px;
+}
+
+nav div {
+  color: #000;
+  font-family: Inknut Antiqua;
+  font-size: 24px;
+  text-align: center;
+  display: inline;
+  flex: 1;
+}
+
+.AddButton {
+  position: fixed;
+  bottom: 20px;
+  right: 50%;
+}
+
 
 body {
   background: var(--bgcolor);
-  cursor: url(Cursor.cur);
 }
