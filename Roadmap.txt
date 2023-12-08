@@ -7,6 +7,7 @@
             - Custom Cursor
             - Buttons
     
+    Log-in/Sign-up Page:
         
     Pages:
         - Layout of all Pages
