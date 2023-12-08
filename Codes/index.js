@@ -6,5 +6,5 @@ document.getElementById("showBoxes").addEventListener("click", function() {
     box.textContent = pageNo ++;
     boxContainer.appendChild(box);
   });
-  
+
   

@@ -25,6 +25,7 @@
 
 .link:active {
   color: var(--ticket);
+  font-size: 90%;
 }
 
 .link {
@@ -33,11 +34,19 @@
 
 .mainLink:active {
   color: var(--ticket);
+  text-decoration: underline;
+  font-size: 96%;
 }
 
 .mainLink {
   text-decoration: none;
   font-weight: bolder;
+}
+
+.clickedLink {
+  color: #5a81c2;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 
