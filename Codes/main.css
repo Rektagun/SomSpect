@@ -11,11 +11,6 @@
     --text:     #000000;
   }
 
-
-  @font-face {
-    font-family: myFirstFont;
-    src: url(InknutAntiqua-Black.ttf);
-  }
   
   div {
     font-family: myFirstFont;
@@ -25,34 +20,98 @@
 
 .Grid {
   width: 100%;
-  /* border-collapse: collapse; */
 }
 
-link:target {
-  color: var(--ticket); /* change color on hover */
+
+.link:active {
+  color: var(--ticket);
 }
+
+.link {
+  text-decoration: none;
+}
+
+.mainLink:active {
+  color: var(--ticket);
+}
+
+.mainLink {
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+
 nav {
+  width: 100%;
   display: flex;
-  background-color: var(--topper);
+  background-color: var(--header);
   height: 48px;
 }
 
 nav div {
   color: #000;
   font-family: Inknut Antiqua;
-  font-size: 24px;
+  font-size: 19px;
   text-align: center;
   display: inline;
   flex: 1;
 }
 
-.AddButton {
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#showBoxes {
+  width: 96px;
+  height: 48px;
   position: fixed;
   bottom: 20px;
-  right: 50%;
+}
+ .addButton:hover {
+  background-color: var(--topper);
+ }
+ .addButton:active {
+  background-color: var(--imgholder);
+ }
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 16px;
+  border: #cee0dc;
+  border-width: 4px;
+  padding-top: 16px;
+}
+
+.box {
+  width: 100%; /* Width of each box */
+  height: 400px; /* Height of each box */
+  background-color:#9badb7;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--header);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background:#859197;
 }
 
 
 body {
   background: var(--bgcolor);
+  padding-left: 64px;
+  padding-right: 64px;
+  padding-bottom: 32px;
 }
