@@ -7,4 +7,6 @@ document.getElementById("showBoxes").addEventListener("click", function() {
     boxContainer.appendChild(box);
   });
 
-  
+  function goHome() {
+    window.location.href = "index.html";
+  }

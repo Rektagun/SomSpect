@@ -1,54 +1,35 @@
 :root {
-    --white:    #ffffff;
-    --header:   #cee0dc;
-    --topper:   #9badb7;
-    --bgcolor:  #70818f;
-    --bottom:   #dfe08e;
-    --imgholder:#c0ba9c;
-    --ticket:   #5a81c2;
-    --extrablue:#34468e;
-    --drop:     #1a1453;
-    --text:     #000000;
-  }
-
-  
-  div {
-    font-family: myFirstFont;
-  }
-
-
-
-.Grid {
-  width: 100%;
+  --white:    #ffffff;
+  --header:   #cee0dc;
+  --topper:   #9badb7;
+  --bgcolor:  #70818f;
+  --bottom:   #dfe08e;
+  --imgholder:#c0ba9c;
+  --ticket:   #5a81c2;
+  --extrablue:#34468e;
+  --drop:     #1a1453;
+  --text:     #000000;
 }
 
-
-.link:active {
-  color: var(--ticket);
-  font-size: 90%;
+body::-webkit-scrollbar {
+  width: 4px;
 }
 
-.link {
-  text-decoration: none;
+body::-webkit-scrollbar-thumb {
+  background: var(--header);
 }
 
-.mainLink:active {
-  color: var(--ticket);
-  text-decoration: underline;
-  font-size: 96%;
-}
+body::-webkit-scrollbar-thumb:hover {
+  background:#859197;
+}  
 
-.mainLink {
-  text-decoration: none;
-  font-weight: bolder;
-}
 
-.clickedLink {
-  color: #5a81c2;
-  text-decoration: none;
-  font-weight: bold;
-}
-
+body {
+  background: var(--bgcolor);
+  padding-left: 64px;
+  padding-right: 64px;
+  padding-bottom: 32px;
+}  
 
 nav {
   width: 100%;
@@ -65,6 +46,72 @@ nav div {
   display: inline;
   flex: 1;
 }
+
+
+.Grid {
+  width: 100%;
+}  
+
+.link:active {
+  color: var(--ticket);
+  font-size: 90%;
+}  
+
+.link {
+  text-decoration: none;
+}
+
+
+
+
+
+.mainLink:active {
+  color: var(--ticket);
+  text-decoration: underline;
+  font-size: 96%;
+}  
+
+.mainLink {
+  text-decoration: none;
+  font-weight: bolder;
+}  
+
+.clickedLink {
+  color: #5a81c2;
+  text-decoration: none;
+  font-weight: bold;
+}  
+
+
+
+.loginlink:active {
+  color: var(--ticket);
+  text-decoration: none;
+  font-size: 96%;
+}  
+
+.loginlink {
+  text-decoration: none;
+  font-weight: bolder;
+}  
+
+
+.logincontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loginlink {
+  width: 128px;
+  height: 64px;
+  position: fixed;
+  bottom: 50%;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+
 
 
 .buttonContainer {
@@ -85,6 +132,7 @@ nav div {
  .addButton:active {
   background-color: var(--imgholder);
  }
+
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -104,23 +152,3 @@ nav div {
   align-items: center;
 }
 
-
-body::-webkit-scrollbar {
-  width: 4px;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: var(--header);
-}
-
-body::-webkit-scrollbar-thumb:hover {
-  background:#859197;
-}
-
-
-body {
-  background: var(--bgcolor);
-  padding-left: 64px;
-  padding-right: 64px;
-  padding-bottom: 32px;
-}
