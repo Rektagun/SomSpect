@@ -152,3 +152,7 @@ nav div {
   align-items: center;
 }
 
+.custom-cursor {
+  cursor: url('Cursor.png'), auto;
+  /* The 'auto' fallback ensures a default cursor if the custom one fails to load */
+}

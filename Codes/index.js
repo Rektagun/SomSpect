@@ -10,3 +10,13 @@ document.getElementById("showBoxes").addEventListener("click", function() {
   function goHome() {
     window.location.href = "index.html";
   }
+
+
+
+  // Find the elements to apply the custom cursor
+const elements = document.querySelectorAll('.your-elements');
+
+// Add the custom cursor class to these elements
+elements.forEach(element => {
+    element.classList.add('custom-cursor');
+});
