@@ -23,7 +23,6 @@ body::-webkit-scrollbar-thumb:hover {
   background:#859197;
 }  
 
-
 body {
   background: var(--bgcolor);
   padding-left: 64px;
@@ -47,7 +46,6 @@ nav div {
   flex: 1;
 }
 
-
 .Grid {
   width: 100%;
 }  
@@ -59,11 +57,8 @@ nav div {
 
 .link {
   text-decoration: none;
+  color: var(--extrablue);
 }
-
-
-
-
 
 .mainLink:active {
   color: var(--ticket);
@@ -82,8 +77,6 @@ nav div {
   font-weight: bold;
 }  
 
-
-
 .loginlink:active {
   color: var(--ticket);
   text-decoration: none;
@@ -93,13 +86,24 @@ nav div {
 .loginlink {
   text-decoration: none;
   font-weight: bolder;
+  border-radius: 16px;
 }  
 
-
 .logincontainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  align-content: center;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--topper);
+  border-width: 4px;
+  border-radius: 8px;
+  border-color: #34468e;
+  padding: 20px;
 }
 
 #loginlink {
@@ -111,8 +115,35 @@ nav div {
   font-weight: bolder;
 }
 
+.overlay {
+  display: none;
+  position: fixed;
+  justify-content: right;
+  width: 75%;
+  height: 75%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--topper);
+  border-width: 4px;
+  border-radius: 8px;
+  border-color: #34468e;
+  padding: 20px;
+  z-index: 999;
+}
 
+.postButtonContainer{
+  justify-content: right;
+  width: 96px;
+  height: 48px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
 
+.hideSelf {
+  display: block;
+}
 
 .buttonContainer {
   display: flex;
@@ -126,6 +157,29 @@ nav div {
   position: fixed;
   bottom: 20px;
 }
+
+
+#boxContainer {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.addButton :nth-child(1){
+  justify-content: right;
+  align-items: center;
+  bottom: 20px;
+  right: 20px;
+}
+
+
+
+.addButton :nth-child(2){
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
  .addButton:hover {
   background-color: var(--topper);
  }
@@ -150,9 +204,4 @@ nav div {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.custom-cursor {
-  cursor: url('Cursor.png'), auto;
-  /* The 'auto' fallback ensures a default cursor if the custom one fails to load */
 }

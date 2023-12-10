@@ -23,24 +23,40 @@
                     </div>
                     <div>
                         <a class="link" href="">
-                            FOLLOW</a>
+                            POST</a>
                     </div>
                     <div>
                         <a class="link" href="login.html">
                             MORE</a>
                     </div>
-                
                 </nav>
             </div>
 
+            
 
-            <div class="buttonContainer">
-                <button id="showBoxes" class="addButton">
-                    +
-                </button>
+
+            <div class="overlay" id="overlay">
+                <div class="postButtonContainer">
+                    <button id="showBoxes" class="addButton" 
+                        onclick="hideOverlay()">Post</button>
+                </div>
             </div>
 
+
+
+            <div class="buttonContainer" id="buttonContainer">
+                <div id="hideSelf" class="hideSelf">
+                    <button onclick="showOverlay()" id="showBoxes" class="addButton">
+                        +
+                    </button>
+                </div>
+            </div>
+
+
+        
+
             <div class="container" id="boxContainer">
+
             </div>
 
         <script src="index.js"></script>
