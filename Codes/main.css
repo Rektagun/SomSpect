@@ -57,7 +57,7 @@ nav div {
 
 .link {
   text-decoration: none;
-  color: var(--extrablue);
+  color: var(--drop);
 }
 
 .mainLink:active {
@@ -67,6 +67,7 @@ nav div {
 }  
 
 .mainLink {
+  color: var(--extrablue);
   text-decoration: none;
   font-weight: bolder;
 }  
@@ -87,6 +88,7 @@ nav div {
   text-decoration: none;
   font-weight: bolder;
   border-radius: 16px;
+  color: var(--extrablue);
 }  
 
 .logincontainer {
@@ -115,13 +117,17 @@ nav div {
   font-weight: bolder;
 }
 
+#loginlink:active {
+  background-color: #c0ba9c;
+}
+
 .overlay {
   display: none;
   position: fixed;
   justify-content: right;
   width: 75%;
-  height: 75%;
-  top: 50%;
+  height: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: var(--topper);
@@ -187,7 +193,7 @@ nav div {
   background-color: var(--imgholder);
  }
 
-.container {
+ .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 16px;
@@ -205,3 +211,32 @@ nav div {
   justify-content: center;
   align-items: center;
 }
+
+
+
+
+.textDiv {
+  width: 95%;
+  height: 100%;
+}
+
+.text {
+  color: var(--drop);
+  width: 100%;
+  height: 20%;
+  border: none;
+  border-radius: 8px;
+  caret-color: var(--extrablue);
+  font-size: 32px;
+  resize: none; /* Prevent resizing */
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  max-height: fit-content;
+}
+
+.text::selection {
+  background-color: var(--imgholder); /* Change selected text background color */
+  color: var(--extrablue);
+
+}
+
+

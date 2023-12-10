@@ -1,11 +1,14 @@
-// var pageNo = 1;
-// document.getElementById("showBoxes").addEventListener("click", function() {
-//     var boxContainer = document.getElementById("boxContainer");
-//     var box = document.createElement("div");
-//     box.className = "box";
-//     box.textContent = pageNo ++;
-//     boxContainer.appendChild(box);
-//   });
+document.getElementById("showBoxes").addEventListener("click", function() {
+  var userInput = document.getElementById("userInput").value;
+  var boxContainer = document.getElementById("boxContainer");
+  var box = document.createElement("div");
+  box.className = "box";
+  box.textContent = userInput;
+  boxContainer.appendChild(box);
+
+  document.getElementById("userInput").value = "";
+
+});
 
 function goHome() {
   window.location.href = "index.html";
@@ -21,9 +24,14 @@ function showOverlay() {
 }
 
 
-function hideOverlay() {
+function hideOverlay() { //POST BUTTON DOES THE POSTING STUFF UK
   document.getElementById('overlay').style.display = 'none'; //main
   
   
   document.getElementById('hideSelf').style.display = 'block'; //Add
 }
+
+
+document.getElementById("userInput").addEventListener("input", function() {
+  this.style.height = (this.scrollHeight);
+})
