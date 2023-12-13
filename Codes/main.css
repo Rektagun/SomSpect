@@ -205,17 +205,14 @@ nav div {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 16px;
-  border: #cee0dc;
-  border-width: 4px;
   padding-top: 16px;
-  border-radius: 8px;
 }
 
 .box {
-  width: 100%; /* Width of each box */
-  height: 400px; /* Height of each box */
+  width: 400%;
+  height: 400px;
   background-color:#9badb7;
-  color: white;
+  color: var(--extrablue);
   display: flex;
   justify-content: center;
   align-items: center;
